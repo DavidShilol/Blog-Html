@@ -1,0 +1,206 @@
+<style>#page-container .zpage .zframe {left:6px;top: 6px;width: calc(100% - 12px);height: calc(100% - 12px);}</style><script type="text/javascript" src="https://widget-assets.wuyuan.io/enhancer-comment/widget/1.2.1/zh-cn/index.js"></script><style type="text/css">.enhancer-comment .comment-btn {
+	  margin-top: 20px;
+	  clear: both;
+	}
+	.enhancer-comment .comment-input {
+	  width: 100%;
+	  padding: 5px;
+	  box-sizing: border-box;
+	}
+	.enhancer-comment .comment-input-tip {
+	  position: absolute;
+	  left: 0;
+	  bottom: -15px;
+	  display: none;
+	  color: red;
+	  max-height: 50px;
+	  overflow: auto;
+	}
+	.enhancer-comment .comment-input-wrap.ui-state-error .comment-input-tip {
+	  display: block;
+	}
+	.enhancer-comment .comment-counter {
+	  position: absolute;
+	  bottom: -15px;
+	  right: 5px;
+	}
+	.enhancer-comment .comment-current-count.error {
+	  color: red;
+	}
+	</style><style type="text/css">.enhancer-comment .ec-liked {
+	  color: #d9534f;
+	}
+	.enhancer-comment .comment-avatar {
+	  margin-right: 10px;
+	}
+	.enhancer-comment .comment-avatar img {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 5px;
+	}
+	.enhancer-comment .comment-content-wrap {
+	  flex: 1;
+	}
+	.enhancer-comment .comment-content-wrap p {
+	  margin: 0;
+	}
+	.enhancer-comment .comment-pagination {
+	  float: right;
+	}
+	.enhancer-comment .comment-pagination .pagination {
+	  margin-bottom: 0;
+	}
+	.enhancer-comment .comment-pagination .page-item {
+	  float: left;
+	  margin-left: 10px;
+	  width: 28px;
+	  height: 28px;
+	  text-align: center;
+	  line-height: 28px;
+	  border-radius: 4px;
+	  list-style: none;
+	}
+	.enhancer-comment .comment-pagination .page-link {
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+	}
+	.enhancer-comment .comment-list-title {
+	  margin-bottom: 20px;
+	  font-size: 16px;
+	  font-weight: bold;
+	}
+	.enhancer-comment .comment-empty {
+	  text-align: center;
+	  min-height: 50px;
+	}
+	.enhancer-comment .comment-wrap {
+	  padding: 10px 0 ;
+	  border-bottom: 1px dashed rgb(var(--ui-widget-content-border-color));
+	  display: flex;
+	}
+	.enhancer-comment .comment-content {
+	  padding: 10px 0 5px;
+	  font-size: 14px;
+	  clear: both;
+	}
+	.enhancer-comment .comment-item-op {
+	  margin-top: 5px;
+	}
+	.enhancer-comment .comment-item-op > span {
+	  margin-right: 10px;
+	  cursor: pointer;
+	  font-size: 12px;
+	  background: none;
+	  border: none;
+	}
+	.enhancer-comment .comment-loading {
+	  width: 200px;
+	  margin: 0 auto;
+	  position: relative;
+	}
+	.enhancer-comment .comment-loading .progress-label {
+	  position: absolute;
+	  left: 50%;
+	  margin-left: -20px;
+	  top: 4px;
+	  font-weight: bold;
+	  text-shadow: 1px 1px 0 #fff;
+	}
+	.enhancer-comment .comment-time {
+	  margin-right: 10px;
+	  float: right;
+	}
+	.enhancer-comment .enhancer-comment-reply-box .comment-box-container {
+	  margin: 0;
+	}
+	.enhancer-comment .ec-loadmore {
+	  padding: 5px 0;
+	  text-align: center;
+	}
+	.enhancer-comment .rating {
+	  border: none;
+	  float: left;
+	  padding: 0;
+	  margin-top: 5px;
+	}
+	.enhancer-comment .rating > label:before {
+	  font-size: 14px;
+	  font-family: "Font Awesome 5 Free";
+	  display: inline-block;
+	  content: "\F005";
+	  font-weight: 900;
+	}
+	.enhancer-comment .rating > label.active {
+	  color: #ffdb50;
+	}
+	.enhancer-comment .rating > label.half:after {
+	  font-family: "Font Awesome 5 Free";
+	  content: "\F089";
+	  position: absolute;
+	  color: #ffdb50;
+	  font-weight: 900;
+	  font-size: 14px;
+	  margin-left: -16px;
+	}
+	.enhancer-comment .rating > label {
+	  color: #ddd;
+	  float: right;
+	  width: 20px;
+	  position: relative;
+	}
+	.enhancer-comment .rating input {
+	  display: none;
+	}
+	.enhancer-comment .rating input[type=radio]:checked ~ label {
+	  color: rgb(var(--ui-state-highlight-background-color));
+	}
+	.enhancer-comment .comment-box .rating {
+	  margin-bottom: 10px;
+	}
+	.enhancer-comment .comment-box .rating > label {
+	  width: 28px;
+	}
+	.enhancer-comment .comment-box .rating > label:before,
+	.enhancer-comment .comment-box .rating > label:after {
+	  font-size: 20px;
+	}
+	.ec-infinite.enhancer-comment .comment-box-container {
+	  position: relative;
+	}
+	.ec-infinite.enhancer-comment .comment-box-container .comment-box {
+	  padding: 5px;
+	  box-sizing: border-box;
+	  display: none;
+	  z-index: 1;
+	  position: absolute;
+	  bottom: 20px;
+	  width: 100%;
+	  background: #fff;
+	}
+	.enhancer-comment.enhancer-comment-bottom .comment-box-container {
+	  margin-top: 20px;
+	}
+	.enhancer-comment.enhancer-comment-top .comment-box-container {
+	  margin-bottom: 20px;
+	}
+	@media screen and (max-width: 480px) {
+	  .enhancer-comment .comment-item-op > span {
+	    display: inline-block;
+	    width: 30px;
+	    height: 30px;
+	    text-align: center;
+	    line-height: 30px;
+	  }
+	  .enhancer-comment .comment-pagination .pagination {
+	    float: right;
+	    padding-left: 0;
+	  }
+	  .enhancer-comment .comment-pagination .page-item {
+	    width: 20px;
+	    height: 20px;
+	    line-height: 20px;
+	    margin-left: 5px;
+	  }
+	}
+	</style>
