@@ -498,7 +498,7 @@ a:hover {
 
 /*新加的 -------------------------------------------------------------------------*/
 header{
-    background: url("../img/ktm.jpg") center top no-repeat;
+    background: url("../mt/hill.jpg") center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -991,7 +991,7 @@ footer {
         width: 290px!important;
     }
     #projects-container{
-        height: 3210px!important;
+        height: 1500px!important;
         width: 320px!important;
     }
 }
@@ -1011,7 +1011,7 @@ footer {
         width: 478px!important;
     }
     #projects-container {
-        height: 3210px!important;
+        height: 1500px!important;
         width: 420px!important;
     }
 }
@@ -1139,7 +1139,7 @@ footer {
         width: 65%;
     }
     #contact {
-        background: url(../mt/34.jpg) center top no-repeat;
+        background: url(../mt/hill.jpg) center top no-repeat;
     }
     #contact .dark-bg {
         padding: 70px 0 90px 0;

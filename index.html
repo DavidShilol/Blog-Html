@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/layui.css">
 </head>
@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <h1 class="logo">
-                        <i>C_Y-BLOG</i>
+                        <i>David-BLOG</i>
                     </h1>
                 </div>
                 <div class="collapse navbar-collapse" id="header-navbar">
@@ -36,7 +36,7 @@
 						<li ><a href="feedback.html" class="fk"><b>反馈</b></a></li>
                         <li ><a href="me.html" class="gyw"><b>关于我</b></a></li>
 						<li ><a href="login.html" class="gyw"><b>登录</b></a></li>
-						<li ><a href="personal.html" class="headpic"><img src="./mt/1.png"/></a></li>
+						<li ><a href="personal.html" class="headpic"><img src="./mt/cat.png"/></a></li>
                     </ul>
                 </div>
             </div>
@@ -44,7 +44,7 @@
 		<div class="container">
 		    <div class="card text-center">
 		        <div>
-		            <p>WEL<br>COM<br>M.</p>
+		            <p>哟~<br>仙女<br>来了</p>
 		        </div>
 		        <a href="#services" class="scrollto s5 fa">
 		            <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
@@ -60,216 +60,76 @@
             <h4 class="text-center">服务介绍</h4>
             <div></div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in">
-                <div class="service-icon">
-                    <i class="glyphicon glyphicon-music"></i>
-                </div>
-                <h4>品牌</h4>
-                <p>根据品牌文化、价值观和差异性制定品牌策略，设计LOGO/VI系统；我们以前瞻性的眼光创造独特的品牌认同</p>
+        <br><br><br>
+        <form>
+            <div class="form-group">
+                <label for="yourCode">随便输点代码</label>
+                <textarea  class="form-control" id="yourCode" placeholder="例子：abs(-3)" rows="3"></textarea>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in d1">
-                <div class="service-icon"><i class="glyphicon glyphicon-film"></i></div>
-                <h4>包装</h4>
-                <p>包装设计的好坏，对于产品至关重要，直接关系产品的市场表现；我们拥有丰富的成功案例，专业且追求极致</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in d2">
-                <div class="service-icon"><i class="glyphicon glyphicon-leaf"></i></div>
-                <h4>广告</h4>
-                <p>广告创意、宣传物料设计对于线上线下市场活动必不可少；快速反应和超强的执行力是我们对客户的郑重承诺</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 service-item scrollimation scale-in d3">
-                <div class="service-icon"><i class="glyphicon glyphicon-yen"></i></div>
-                <h4>网站</h4>
-                <p>互联网是一个变化、持续创新的互动平台；我们应用最新的设计理念和技术方案，助您高效的连接每一位客户</p>
-            </div>
-        </div>
+            <input type="button" class="btn btn-default" id="runCodeButton" value="运行代码">
+        </form>
+        <br><br><br>
+        <pre id="result">   </pre>
     </div>
 </section>
+
+<br>
 
 <!--portfolio 投资组合-->
 <section id="portfolio">
     <div class="container-fluid masonry-wrapper scrollimation fade-in in">
         <div id="projects-container" class="masonry"
-             style="visibility: visible; position: relative; height: 1000px; width: 1480px;">
+             style="visibility: visible; position: relative; height: 700px; width: 1480px;">
             <a class="project-item masonry-brick"
                data-images="/system/comfy/cms/files/files/000/000/019/original/10.jpg,/system/comfy/cms/files/files/000/000/018/original/10-1.jpg,/system/comfy/cms/files/files/000/000/017/original/10-2.jpg"
-               style="position: absolute; top: 0px; left: 0px;">
-                <img class="img-responsive project-image" src="./mt/1.png" alt="">
+               style="position: absolute; top: 0px; left: 0px;"
+               id="watchTime">
+                <img class="img-responsive project-image" src="./mt/clock.jpg" alt="">
                 <div class="hover-mask">
-                    <h2 class="project-title">AGV</h2>
-                    <p>品牌（AGV）</p>
+                    <h2 class="project-title">查时间</h2>
+                    <p>查看当前时间</p>
                 </div>
                 <div class="sr-only project-description">
-                    品牌（AGV）
+                    看时间
                 </div>
             </a>
             <a class="project-item masonry-brick"
                data-images="/system/comfy/cms/files/files/000/000/030/original/9-3.jpg,/system/comfy/cms/files/files/000/000/029/original/9-5.jpg,/system/comfy/cms/files/files/000/000/028/original/9-6.jpg"
-               style="position: absolute; top: 0px; left: 370px;">
-                <img class="img-responsive project-image" src="./mt/2.png" alt="">
+               style="position: absolute; top: 0px; left: 370px;"
+               id="catchAmount">
+                <img class="img-responsive project-image" src="./mt/coin.jpg" alt="">
                 <div class="hover-mask">
-                    <h2 class="project-title">杜卡迪</h2>
-                    <p>品牌（DUCATI）</p>
+                    <h2 class="project-title">提金额</h2>
+                    <p>将一堆带￥的金额转换成金额小数</p>
                 </div>
                 <div class="sr-only project-description">
-                    品牌（DUCATI）
+                    提金额
                 </div>
             </a>
             <a class="project-item masonry-brick"
                data-images="/system/comfy/cms/files/files/000/000/033/original/8_.jpg,/system/comfy/cms/files/files/000/000/036/original/8-1.jpg,/system/comfy/cms/files/files/000/000/035/original/8-3.jpg,/system/comfy/cms/files/files/000/000/034/original/8-4.jpg,/system/comfy/cms/files/files/000/000/037/original/8-5.jpg"
-               style="position: absolute; top: 0px; left: 740px;">
-                <img class="img-responsive project-image" src="./mt/3.png" alt="">
+               style="position: absolute; top: 0px; left: 740px;"
+               id="enjoyBeauty">
+                <img class="img-responsive project-image" src="./mt/beauty.jpg" alt="">
                 <div class="hover-mask">
-                    <h2 class="project-title">雅马哈</h2>
-                    <p>品牌（Ymaha）</p>
+                    <h2 class="project-title">看仙女</h2>
+                    <p>计算机眼中的仙女</p>
                 </div>
                 <div class="sr-only project-description">
-                    品牌（Ymaha）
+                    看仙女
                 </div>
             </a>
             <a class="project-item masonry-brick"
                data-images="/system/comfy/cms/files/files/000/000/041/original/11.jpg,/system/comfy/cms/files/files/000/000/040/original/11-1.jpg,/system/comfy/cms/files/files/000/000/038/original/11-2.jpg,/system/comfy/cms/files/files/000/000/039/original/11-3.jpg"
-               style="position: absolute; top: 0px; left: 1110px;">
-                <img class="img-responsive project-image" src="./mt/4.png" alt="">
+               style="position: absolute; top: 0px; left: 1110px;"
+               id="upload">
+                <img class="img-responsive project-image" src="./mt/meat.png" alt="" id="yourPic">
                 <div class="hover-mask">
-                    <h2 class="project-title">川崎</h2>
-                    <p>品牌（Kawasaki）</p>
+                    <h2 class="project-title">哈哈哈</h2>
+                    <p>上传一张自拍看效果</p>
                 </div>
                 <div class="sr-only project-description">
-                    品牌（Kawasaki）
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/044/original/5-2.jpg,/system/comfy/cms/files/files/000/000/043/original/5-1.jpg"
-               style="position: absolute; top: 250px; left: 0px;">
-                <img class="img-responsive project-image" src="./mt/5.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">风</h2>
-                    <p>自由</p>
-                </div>
-                <div class="sr-only project-description">
-                    自由
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/045/original/13.jpg,/system/comfy/cms/files/files/000/000/100/original/13-1.jpg"
-               style="position: absolute; top: 250px; left: 370px;">
-                <img class="img-responsive project-image" src="./mt/6.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">雅马哈</h2>
-                    <p>黑武士</p>
-                </div>
-                <div class="sr-only project-description">
-                    黑武士
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/048/original/4.jpg,/system/comfy/cms/files/files/000/000/046/original/4-1.jpg,/system/comfy/cms/files/files/000/000/047/original/4-2.jpg,/system/comfy/cms/files/files/000/000/101/original/4-3.jpg,/system/comfy/cms/files/files/000/000/102/original/4-4.jpg,/system/comfy/cms/files/files/000/000/103/original/4-5.jpg"
-               style="position: absolute; top: 250px; left: 740px;">
-                <img class="img-responsive project-image" src="./mt/7.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">雅马哈</h2>
-                    <p>黑武士</p>
-                </div>
-                <div class="sr-only project-description">
-                    黑武士
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/139/original/15-1.jpg,/system/comfy/cms/files/files/000/000/138/original/15-2.jpg,/system/comfy/cms/files/files/000/000/137/original/15-3.jpg,/system/comfy/cms/files/files/000/000/136/original/15-4.jpg"
-               style="position: absolute; top: 250px; left: 1110px;">
-                <img class="img-responsive project-image" src="./mt/8.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">著名乐器大厂</h2>
-                    <p>Ymaha</p>
-                </div>
-                <div class="sr-only project-description">
-                    Ymaha
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/128/original/14-1.jpg,/system/comfy/cms/files/files/000/000/129/original/14-2.jpg,/system/comfy/cms/files/files/000/000/130/original/14-3.jpg,/system/comfy/cms/files/files/000/000/131/original/14-4.jpg,/system/comfy/cms/files/files/000/000/132/original/14-5.jpg"
-               style="position: absolute; top: 500px; left: 0px;">
-                <img class="img-responsive project-image" src="./mt/9.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">侠气</h2>
-                    <p>侠气</p>
-                </div>
-                <div class="sr-only project-description">
-                    侠气
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/124/original/16-1.jpg,/system/comfy/cms/files/files/000/000/125/original/16-2.jpg,/system/comfy/cms/files/files/000/000/126/original/16-3.jpg"
-               style="position: absolute; top: 500px; left: 370px;">
-                <img class="img-responsive project-image" src="./mt/10.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">大小眼</h2>
-                    <p>大小眼</p>
-                </div>
-                <div class="sr-only project-description">
-                    大小眼
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/050/original/3-1.jpg,/system/comfy/cms/files/files/000/000/051/original/3-2.jpg"
-               style="position: absolute; top: 500px; left: 740px;">
-                <img class="img-responsive project-image" src="./mt/11.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">挡泥板</h2>
-                    <p>挡泥板</p>
-                </div>
-                <div class="sr-only project-description">
-                    挡泥板
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/057/original/7-1.jpg,/system/comfy/cms/files/files/000/000/056/original/7-2.jpg,/system/comfy/cms/files/files/000/000/055/original/7-3.jpg,/system/comfy/cms/files/files/000/000/054/original/7-4.jpg"
-               style="position: absolute; top: 500px; left: 1110px;">
-                <img class="img-responsive project-image" src="./mt/12.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">S1000RR</h2>
-                    <p>S1000RR</p>
-                </div>
-                <div class="sr-only project-description">
-                    S1000RR
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/062/original/6.jpg,/system/comfy/cms/files/files/000/000/060/original/6-1.jpg,/system/comfy/cms/files/files/000/000/061/original/6-2.jpg"
-               style="position: absolute; top: 750px; left: 0px;">
-                <img class="img-responsive project-image" src="./mt/13.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">Z1000</h2>
-                    <p>Z1000</p>
-                </div>
-                <div class="sr-only project-description">
-                    Z1000
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/067/original/1.jpg,/system/comfy/cms/files/files/000/000/066/original/1-1.jpg,/system/comfy/cms/files/files/000/000/065/original/1-2.jpg,/system/comfy/cms/files/files/000/000/064/original/1-3.jpg,/system/comfy/cms/files/files/000/000/063/original/1-4.jpg"
-               style="position: absolute; top: 750px; left: 370px;">
-                <img class="img-responsive project-image" src="./mt/14.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">压弯</h2>
-                    <p>压弯</p>
-                </div>
-                <div class="sr-only project-description">
-                    压弯
-                </div>
-            </a>
-            <a class="project-item masonry-brick"
-               data-images="/system/comfy/cms/files/files/000/000/070/original/2.jpg,/system/comfy/cms/files/files/000/000/068/original/2-1.jpg,/system/comfy/cms/files/files/000/000/069/original/2-2.jpg"
-               style="position: absolute; top: 750px; left: 740px;">
-                <img class="img-responsive project-image" src="./mt/15.png" alt="">
-                <div class="hover-mask">
-                    <h2 class="project-title">单遥臂</h2>
-                    <p>单遥臂</p>
-                </div>
-                <div class="sr-only project-description">
-                    单遥臂
+                    哈哈哈
                 </div>
             </a>
         </div>
@@ -285,20 +145,14 @@
         </div>
         <div class="row">
             <div class="col-sm-6 logo scrollimation fade-right">
-                <h1><span>CHENGYONG</span></h1>
-                <h4>即将毕业的大三学生</h4>
+                <h1><span>David</span></h1>
+                <h4></h4>
                 <div class="addr scrollimation fade-right d2">
-                    <address>
-                        坐标：湖南省长沙市一所大专院校<br>
-                        <span class="hidden-xs">QQ：</span><i class="fa fa-phone visible-xs-inline"
-                                                             aria-hidden="true"></i>2674118195<br>
-                        <span class="hidden-xs">邮箱：</span>2674118195@QQ.COM
-                    </address>
                 </div>
             </div>
             <div class="col-sm-6 slogon scrollimation fade-left d1">
                <div class="city text-right scrollimation fade-left d3">
-                    <img src="./mt/28.jpg">
+                    <img src="./mt/cat.png">
                 </div>
             </div>
         </div>
@@ -310,35 +164,25 @@
 <section id="contact">
     <div class="container-fluid dark-bg text-center">
         <div class="container text-center clients">
-            <!-- <img src="img/1.png">
-            <img src="img/2.png">
-            <img src="img/3.png">
-            <img src="img/4.png">
-            <img src="img/5.png">
-            <img src="img/6.png">
-            <img src="img/7.png">
-            <img src="img/8.png">
-            <img src="img/9.png">
-            <img src="img/10.png">
-            <img src="img/11.png">
-            <img src="img/12.png"> -->
         </div>
         <div id="wechat" style="display: block;" class="contact-btn container scrollimation scale-in">
         </div>
     </div>
 </section>
 
+<input type="file" id="fileElem" accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+
 <!--footer 脚部-->
 <footer>
     <div class="container">
-        <div class="col-sm-8 text-left">© 2021 一名大学生 版权所有 <span>京ICP备16046633号</span></div>
-        <div class="col-sm-4 text-right"><i class="glyphicon glyphicon-hourglass" aria-hidden="true"></i> MEWEIDEA.COM</div>
+        <div class="col-sm-8 text-left">© David <span></span></div>
+        <div class="col-sm-4 text-right"><i class="glyphicon glyphicon-hourglass" aria-hidden="true"></i> xxx.com</div>
     </div>
 </footer>
 
     <div class="footer">
         <div class="container">
-            <p>Copyright &copy; 2020.chengyong.com</p>
+            <p>Copyright &copy; david.com</p>
         </div>
     </div>
 
@@ -363,6 +207,76 @@
 		  
     });
 	</script>
+    <script type="text/javascript">
+        function postCode(code){
+            $.ajax({
+                data: JSON.stringify({"expr": code}),
+                type: "post",
+                url: "http://10.0.0.4:8091/",
+                contentType: "application/json",
+                success: function(result, status, xhr){
+                    $("#result").text(result["result"]);
+                },
+                error: function(xhr, status, error){
+                    $("#result").text(error);
+                }
+            });
+        }
+        function runCode(event){
+            let code = $("#yourCode").val();
+            postCode(code);
+        }
+        document.getElementById("runCodeButton").addEventListener("click", runCode, false);
+    </script>
+    <script type="text/javascript">
+        function quickExecute(code){
+            $("#yourCode").text(code);
+            postCode(code);
+        }
+    </script>
+    <script type="text/javascript">
+        function doWatchTime(){
+            quickExecute("datetime.now()");
+        }
+        document.getElementById("watchTime").addEventListener("click", doWatchTime, false);
+
+        function doCatchAmount(){
+            quickExecute("[float(x) for x in re.findall(r\"￥(\\d+\\.\\d{2})\", \"10 个篮球合计 ￥103.23，25 个羽毛球合计￥55.78，总计￥159.01\")]");
+        }
+        document.getElementById("catchAmount").addEventListener("click", doCatchAmount, false);
+
+        function doEnjoyBeauty(){
+            quickExecute("f\"计算机眼中的仙女：3847238451，人类眼中的仙女：{chr(38472)}{chr(38451)}\"");
+        }
+        document.getElementById("enjoyBeauty").addEventListener("click", doEnjoyBeauty, false);
+    </script>
+    <script type="text/javascript">
+        document.getElementById("upload").addEventListener(
+            "click", 
+            function(e){
+                document.getElementById("fileElem").click();
+            }, 
+            false
+        );
+        function handleFiles(files){
+            let formData = new FormData();
+            formData.append("file", files[0])
+            $.ajax({
+                data: formData,
+                type: "post",
+                url: "http://10.0.0.4:8091/upload",
+                processData: false,
+                contentType: false,
+                success(result, status, xhr){
+                    console.log(result);
+                    $("#yourPic").attr("src", result["result"])
+                },
+                error(xhr, status, error){
+                    console.log(error);
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
